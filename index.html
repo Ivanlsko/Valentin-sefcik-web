@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Valentín Šefčík</title>
   </head>
   <body>
@@ -24,74 +25,85 @@
           </a>
         </ul>
       </nav>
+      <img class="icon" id="book-icon" src="assets/book-icon.svg" alt="" />
+      <img class="icon" id="pencil-icon" src="assets/pencil-icon.svg" alt="" />
+      <img class="icon" id="glasses-icon" src="assets/glasses-icon.svg" alt="" />
     </header>
-    <div class="icon"></div>
-    <div class="icon"></div>
-    <div class="icon"></div>
+
     <main>
       <section id="hero">
-        <div id="left_side">
+        <div id="left-side">
           <h2>VALENTÍN ŠEFČÍK</h2>
           <h1>Píšem básničky,<br />pre Vaše detičky.</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum consequat diam praesent a. Suspendisse quam aenean dignissim gravida varius.</p>
-          <p id="hero-cta"><span class="highlighted">Moja tvorba</span> alebo <span class="highlighted">Moja cesta</span></p>
+          <p id="hero-cta">
+            <a href=""><span class="highlighted">Moja tvorba</span></a> alebo <a href=""><span class="highlighted">Moja cesta</span></a>
+          </p>
 
-          <div id="some"><img src="" alt="instagram-icon" /><img src="" alt="facebook-icon" /></div>
+          <div id="some"><img src="assets/ig-icon.svg" alt="instagram-icon" /><img src="assets/fb-icon.svg" alt="facebook-icon" /></div>
         </div>
 
-        <div id="photo"><img src="" alt="valentin-sefcik-portrait" /></div>
+        <div id="photo"><img src="assets/valentin-sefcik-portrait.png" alt="valentin-sefcik-portrait" /></div>
       </section>
       <section id="tvorba">
         <div id="tvorba-box">
           <div id="top-section">
             <h3>Moja tvorba</h3>
-            <p id="tvorba-cta">
-              Zobraziť viac <span id="arrow-right"><img src="" alt="sipka-vpravo" /></span>
-            </p>
+            <p id="tvorba-cta">Zobraziť viac</p>
+            <!--             <i class="fa-solid fa-arrow-right"></i>
+ -->
           </div>
-          <div class="article">
-            <!-- doplnit nazvy -->
-            <!-- doplnit nazvy -->
-            <!-- doplnit nazvy -->
-            <!-- doplnit nazvy -->
-            <img src="" alt="kniha-nazov" class="book" />
-            <h4 class="book-name"></h4>
-          </div>
-          <div class="article">
-            <img src="" alt="kniha-nazov" class="book" />
-            <h4 class="book-name"></h4>
-          </div>
-          <div class="article">
-            <img src="" alt="kniha-nazov" class="book" />
-            <h4 class="book-name"></h4>
-          </div>
-          <div class="article">
-            <img src="" alt="kniha-nazov" class="book" />
-            <h4 class="book-name"></h4>
+          <div id="articles">
+            <div class="article">
+              <!-- doplnit nazvy -->
+              <!-- doplnit nazvy -->
+              <!-- doplnit nazvy -->
+              <!-- doplnit nazvy -->
+              <img src="assets/book-mockup.svg" alt="kniha-nazov" class="book" />
+              <h4 class="book-name">Názov knihy</h4>
+            </div>
+            <div class="article">
+              <img src="assets/book-mockup.svg" alt="kniha-nazov" class="book" />
+              <h4 class="book-name">Názov knihy</h4>
+            </div>
+            <div class="article">
+              <img src="assets/book-mockup.svg" alt="kniha-nazov" class="book" />
+              <h4 class="book-name">Názov knihy</h4>
+            </div>
+            <div class="article">
+              <img src="assets/book-mockup.svg" alt="kniha-nazov" class="book" />
+              <h4 class="book-name">Názov knihy</h4>
+            </div>
           </div>
         </div>
-        <div class="icon"></div>
-        <div class="icon"></div>
+        <img class="icon" id="red-icon" src="assets/red-icon.svg" alt="" />
+        <img class="icon" id="yellow-icon-s" src="assets/yellow-icon-small.svg" alt="" />
       </section>
-      <section id="o_autorovi">
-        <img src="" alt="" id="portrait-o-autorovi" />
-        <div>
-          <div id="text">
-            <p id="quotes-up"></p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum consequat diam praesent a. Suspendisse quam aenean dignissim gravida varius. <br />
-              ipsum dolor sit amet, consectetur adipiscing elit. Dictum consequat diam praesent a. Suspendisse quam aenean dignissim gravida varius. <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum consequat diam praesent a.
-              Suspendisse quam aenean dignissim gravida varius.Lorem ipsum dolor signissim gravida varius.Lorem ipsum dolor s
-            </p>
-            <p id="quotes-down"></p>
+      <section id="o-autorovi">
+        <div id="autor-wrapper">
+          <div id="portrait-flipped">
+            <img src="assets/portrait-flipped.png" alt="" id="portrait-o-autorovi" />
           </div>
-          <img src="" alt="" id="signature" />
+          <div id="text-wrapper">
+            <div id="text">
+              <p id="quotes-up"></p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum consequat diam praesent a. Suspendisse quam aenean dignissim gravida varius. <br />
+                ipsum dolor sit amet, consectetur adipiscing elit. Dictum consequat diam praesent a. Suspendisse quam aenean dignissim gravida varius. <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum consequat diam praesent a.
+                Suspendisse quam aenean dignissim gravida varius.Lorem ipsum dolor signissim gravida varius.Lorem ipsum dolor s
+              </p>
+              <p id="quotes-down"></p>
+            </div>
+            <img src="assets/signature.svg" alt="" id="signature" />
+          </div>
         </div>
       </section>
-      <section id="partneri">
-        <img src="" alt="ocenenie-bibiana" class="partner-logo" />
-        <img src="" alt="fond-na-podporu-umenia" class="partner-logo" />
-        <img src="" alt="vydavatelstvo-slovart" class="partner-logo" />
+      <section id="partners">
+        <div id="partners-logos">
+          <img src="assets/bibiana.svg" alt="ocenenie-bibiana" class="partner-logo" />
+          <img src="assets/fpu.svg" alt="fond-na-podporu-umenia" class="partner-logo" />
+          <img src="assets/slovart.svg" alt="vydavatelstvo-slovart" class="partner-logo" />
+        </div>
       </section>
     </main>
     <footer>
