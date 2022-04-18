@@ -16,14 +16,14 @@ $font-h4: 1.8em;
 $font-h5: 1.6em;
 
 $font-sizes: (
-  "small": 0.8em,
-  "medium ": 1em,
-  "big": 1.2em,
-  "h1": 3.4em,
-  "h2": 1.3em,
-  "h3": 2.2em,
-  "h4": 1.8em,
-  "h5": 1.6em,
+  "small": 0.8rem,
+  "medium ": 1rem,
+  "big": 1.2rem,
+  "h1": 3.4rem,
+  "h2": 1.3rem,
+  "h3": 2.2rem,
+  "h4": 1.8rem,
+  "h5": 1.3rem,
 );
 
 $colors: (
@@ -41,6 +41,9 @@ $margin-left-right: 14.583vw;
 //SCSS code
 //general
 
+html {
+  font-size: 16px;
+}
 body {
   font-family: "Nunito";
   margin: 0;
@@ -51,25 +54,30 @@ h3 {
   font-family: "Lora";
 }
 
+ul {
+  list-style: none;
+  padding: 0vw;
+
+  a {
+    color: map-get($colors, "dark-text");
+    justify-content: space-between;
+    text-decoration: none;
+    li {
+      padding: 0;
+    }
+  }
+}
+
 //nav
 header {
   position: relative;
   ul {
     display: flex;
-    list-style: none;
-    padding: 1vw 0vw;
     justify-content: center;
-    :not(:last-child) {
-      margin: 0vw 5vw 0vw 0vw;
-    }
-    a {
-      color: map-get($colors, "dark-text");
-      justify-content: space-between;
-      text-decoration: none;
-      li {
-        padding: 0;
-      }
-    }
+    padding: 1vw 0vw;
+  }
+  :not(:last-child) {
+    margin: 0vw 5vw 0vw 0vw;
   }
 }
 
@@ -160,6 +168,7 @@ h1 {
   position: relative;
   margin: 0vw 5.8vw;
   background-color: map-get($colors, "light-orange");
+  border-radius: 0.8%;
   #tvorba-box {
     padding: 5vw 9vw;
     #top-section {
@@ -214,6 +223,7 @@ h1 {
     display: flex;
     margin: 0vw $margin-left-right 0vw 12.5%;
     #portrait-flipped {
+      margin-top: auto;
       img {
         max-width: 90%;
       }
@@ -246,5 +256,84 @@ h1 {
       padding: 3.5vw 2.5vw;
       width: 12%;
     }
+  }
+}
+
+//footer
+
+footer {
+  position: relative;
+  padding: 0vw $margin-left-right;
+  color: map-get($colors, "lighter-text");
+  div {
+    h5 {
+      color: map-get($colors, "blue");
+
+      font : {
+        family: "Lora";
+        size: map-get($font-sizes, "h5");
+        weight: 300;
+      }
+    }
+    ul {
+      a {
+        color: map-get($colors, "lighter-text");
+        li {
+          padding-bottom: 12%;
+        }
+      }
+    }
+    #some {
+      a {
+        img {
+          margin: 6% 3% 0% -3.3%;
+        }
+      }
+    }
+  }
+  #top-section {
+    display: grid;
+    grid-template-columns: 2.5fr 0.8fr 2.3fr;
+    margin-top: 6%;
+    column-gap: 6%;
+    input {
+      border: none;
+      border-bottom: 1px solid map-get($colors, "blue");
+      padding: 0% 0% 4%;
+      width: 100%;
+      color: map-get($colors, "blue");
+      margin-top: 9%;
+    }
+  }
+  #mid-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 0% 6%;
+    font-size: map-get($font-sizes, "small");
+    color: #898989;
+    a {
+      color: #898989;
+    }
+  }
+  #bottom-section {
+    background-color: map-get($colors, "blue");
+    color: map-get($colors, "white-text");
+    margin: 0 -20.6%;
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    p {
+      display: block;
+      margin: auto;
+      padding: 0.5%;
+      a {
+        color: map-get($colors, "white-text");
+      }
+    }
+  }
+  #yellow-icon {
+    top: -6%;
+    right: 0%;
+    width: 5%;
   }
 }

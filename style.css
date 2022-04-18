@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Nunito";
   margin: 0;
@@ -10,6 +14,23 @@ h3 {
   font-family: "Lora";
 }
 
+ul {
+  list-style: none;
+  padding: 0vw;
+}
+
+ul a {
+  color: #202020;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: none;
+}
+
+ul a li {
+  padding: 0;
+}
+
 header {
   position: relative;
 }
@@ -18,27 +39,14 @@ header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
-  padding: 1vw 0vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 1vw 0vw;
 }
 
-header ul :not(:last-child) {
+header :not(:last-child) {
   margin: 0vw 5vw 0vw 0vw;
-}
-
-header ul a {
-  color: #202020;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-decoration: none;
-}
-
-header ul a li {
-  padding: 0;
 }
 
 .icon {
@@ -64,7 +72,7 @@ header ul a li {
 }
 
 h1 {
-  font-size: 3.4em;
+  font-size: 3.4rem;
   font-weight: 500;
 }
 
@@ -85,7 +93,7 @@ h1 {
   margin-bottom: -3vw;
   color: #3539a2;
   letter-spacing: 0.5em;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 
@@ -95,7 +103,7 @@ h1 {
 }
 
 #hero #left-side #hero-cta {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: #202020;
   margin-top: 3vw;
 }
@@ -120,6 +128,7 @@ h1 {
   position: relative;
   margin: 0vw 5.8vw;
   background-color: #faf8f4;
+  border-radius: 0.8%;
 }
 
 #tvorba #tvorba-box {
@@ -140,7 +149,7 @@ h1 {
 }
 
 #tvorba #tvorba-box #top-section h3 {
-  font-size: 2.2em;
+  font-size: 2.2rem;
   font-weight: 500;
 }
 
@@ -168,7 +177,7 @@ h1 {
 }
 
 #tvorba #articles .article h4 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
@@ -198,6 +207,10 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   margin: 0vw 14.583vw 0vw 12.5%;
+}
+
+#o-autorovi #autor-wrapper #portrait-flipped {
+  margin-top: auto;
 }
 
 #o-autorovi #autor-wrapper #portrait-flipped img {
@@ -243,5 +256,94 @@ h1 {
 #partners #partners-logos img {
   padding: 3.5vw 2.5vw;
   width: 12%;
+}
+
+footer {
+  position: relative;
+  padding: 0vw 14.583vw;
+  color: #515151;
+}
+
+footer div h5 {
+  color: #3539a2;
+  font-family: "Lora";
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+footer div ul a {
+  color: #515151;
+}
+
+footer div ul a li {
+  padding-bottom: 12%;
+}
+
+footer div #some a img {
+  margin: 6% 3% 0% -3.3%;
+}
+
+footer #top-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2.5fr 0.8fr 2.3fr;
+      grid-template-columns: 2.5fr 0.8fr 2.3fr;
+  margin-top: 6%;
+  -webkit-column-gap: 6%;
+          column-gap: 6%;
+}
+
+footer #top-section input {
+  border: none;
+  border-bottom: 1px solid #3539a2;
+  padding: 0% 0% 4%;
+  width: 100%;
+  color: #3539a2;
+  margin-top: 9%;
+}
+
+footer #mid-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3% 0% 6%;
+  font-size: 0.8rem;
+  color: #898989;
+}
+
+footer #mid-section a {
+  color: #898989;
+}
+
+footer #bottom-section {
+  background-color: #3539a2;
+  color: #e5e5e5;
+  margin: 0 -20.6%;
+  padding: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer #bottom-section p {
+  display: block;
+  margin: auto;
+  padding: 0.5%;
+}
+
+footer #bottom-section p a {
+  color: #e5e5e5;
+}
+
+footer #yellow-icon {
+  top: -6%;
+  right: 0%;
+  width: 5%;
 }
 /*# sourceMappingURL=style.css.map */
